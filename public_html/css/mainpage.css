@@ -1,0 +1,62 @@
+* {
+    margin: 0;                /* Resets margin for all elements */
+    padding: 0;               /* Resets padding for all elements */
+    box-sizing: border-box;   /* Includes padding and border in the element's total width and height */
+}
+
+.headerlink {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the original color */
+}
+
+.topmenu {
+    background-color: black;
+    color: white;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item{
+    font-family: tahoma;
+    font-size: 18px;
+    padding: 15px 40px 15px;               
+    text-align: center;
+    width: 160px;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    padding: 15px 40px 15px; 
+    background-color: #007acc;
+    color:white;                
+    text-align: center; 
+    text-transform: uppercase;
+    font-weight: bolder; 
+}
+
+.divider {
+    height: 3px;
+    border: none;
+    background-color: black;
+}
+
+.footinfo{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 8px;
+
+
+}
+
+.footlink{
+    color:black;
+}
+
+.footlink:hover{
+    color: white;
+
+
+}
