@@ -1,9 +1,10 @@
 .tabdecor{
-    border-collapse: collapse;
     border: 3px;
+    border-color: black;
 }
 .cell-link{
     color: inherit; /* Keeps the original color */
+    text-decoration: none;
 }
 
 .cellsite{
