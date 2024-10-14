@@ -11,6 +11,13 @@
     text-align: center; /* Aligns text to the left, you can change it if needed */
 }
 
+#linksTable th {
+    background-color: 70c2ff;
+    font-size: 22;
+
+
+}
+
 .cell-link {
     color: inherit; /* Keeps the original color */
     text-decoration: none;
