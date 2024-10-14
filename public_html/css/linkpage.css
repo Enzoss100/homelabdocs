@@ -1,0 +1,12 @@
+.tabdecor{
+    border-collapse: collapse;
+    border: 3px;
+}
+.cell-link{
+    color: inherit; /* Keeps the original color */
+}
+
+.cellsite{
+    font-weight: bolder;
+    text-decoration: underline;
+}

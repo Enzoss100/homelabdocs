@@ -30,6 +30,7 @@ async function loadLinks() {
             
             // Create and populate the placeholder site name cell
             const nameCell = document.createElement('td');
+            nameCell.classList.add('cellsite')
             nameCell.textContent = '--SiteName--';
 
             // Create and populate the placeholder URL cell
@@ -37,6 +38,7 @@ async function loadLinks() {
             const link = document.createElement('a');
             link.href = '#'; // Placeholder link
             link.textContent = '--SiteURL--';
+            urlCell.classList.add('cell-link');
             urlCell.appendChild(link);
 
             // Add the cells to the row
@@ -55,6 +57,7 @@ async function loadLinks() {
 
                 // Create and populate the site name cell
                 const nameCell = document.createElement('td');
+                nameCell.classList.add('cellsite')
                 nameCell.textContent = siteName;
 
                 // Create and populate the URL cell
@@ -62,6 +65,7 @@ async function loadLinks() {
                 const link = document.createElement('a');
                 link.href = url;
                 link.textContent = url;
+                urlCell.classList.add('cell-link');
                 urlCell.appendChild(link);
 
                 // Add the cells to the row
