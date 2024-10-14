@@ -60,11 +60,6 @@ async function loadLinks() {
                 // Create a new table row
                 const row = document.createElement('tr');
 
-                // Create and populate the index cell
-                const indexCell = document.createElement('td');
-                indexCell.textContent = index + 1; // Adding the index number
-                row.appendChild(indexCell);
-
                 // Create and populate the site name cell
                 const nameCell = document.createElement('td');
                 nameCell.textContent = siteName;
@@ -79,7 +74,6 @@ async function loadLinks() {
                 urlCell.appendChild(link);
 
                 // Add the cells to the row
-                row.appendChild(indexCell);
                 row.appendChild(nameCell);
                 row.appendChild(urlCell);
 
