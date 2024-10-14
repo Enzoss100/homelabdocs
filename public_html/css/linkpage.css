@@ -8,15 +8,18 @@
 .cell-link {
     color: inherit; /* Keeps the original color */
     text-decoration: none;
+    text-align: center;
 }
 
 .cell-link:hover {
     text-decoration: underline; /* Adds underline when hovering over the link */
+    text-align: center;
 }
 
 .cellsite {
     font-weight: bolder;
     text-decoration: underline;
+    text-align: center;
 }
 
 .tablehold {
