@@ -1,2 +1,3 @@
-LocalSite : https://github.com/Enzoss100/localsite
-HomelabDocumentation : https://github.com/Enzoss100/homelabdocs
+Local Site Repository : https://github.com/Enzoss100/localsite
+Homelab Documentation Repository : https://github.com/Enzoss100/homelabdocs
+Debian Netowrk Documentation : https://wiki.debian.org/NetworkConfiguration
