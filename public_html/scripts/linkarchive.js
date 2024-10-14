@@ -30,15 +30,15 @@ async function loadLinks() {
             
             // Create and populate the placeholder site name cell
             const nameCell = document.createElement('td');
-            nameCell.classList.add('cellsite')
             nameCell.textContent = '--SiteName--';
+            nameCell.classList.add('cellsite'); // Apply CSS class for site name column
 
             // Create and populate the placeholder URL cell
             const urlCell = document.createElement('td');
             const link = document.createElement('a');
             link.href = '#'; // Placeholder link
             link.textContent = '--SiteURL--';
-            urlCell.classList.add('cell-link');
+            link.classList.add('cell-link'); // Apply CSS class for URL
             urlCell.appendChild(link);
 
             // Add the cells to the row
@@ -49,23 +49,28 @@ async function loadLinks() {
             tableBody.appendChild(placeholderRow);
         } else {
             // Loop through each line, split by ":", and add it to the table
-            lines.forEach(line => {
+            lines.forEach((line, index) => {
                 const [siteName, url] = line.split(' : ').map(part => part.trim());
 
                 // Create a new table row
                 const row = document.createElement('tr');
 
+                // Create and populate the index cell
+                const indexCell = document.createElement('td');
+                indexCell.textContent = index + 1; // Adding the index number
+                row.appendChild(indexCell);
+
                 // Create and populate the site name cell
                 const nameCell = document.createElement('td');
-                nameCell.classList.add('cellsite')
                 nameCell.textContent = siteName;
+                nameCell.classList.add('cellsite'); // Apply CSS class for site name column
 
                 // Create and populate the URL cell
                 const urlCell = document.createElement('td');
                 const link = document.createElement('a');
                 link.href = url;
                 link.textContent = url;
-                urlCell.classList.add('cell-link');
+                link.classList.add('cell-link'); // Apply CSS class for URL
                 urlCell.appendChild(link);
 
                 // Add the cells to the row

@@ -1,17 +1,26 @@
-#linksTable{
-    border: 3px;
-    border-color: black;
+#linksTable {
+    border: 3px solid black; /* Fixed border definition */
+    width: 80%; /* Example width, you can adjust */
+    margin: 0 auto; /* Centers the table */
+    border-collapse: collapse; /* Ensures the borders look clean */
 }
-.cell-link{
+
+.cell-link {
     color: inherit; /* Keeps the original color */
     text-decoration: none;
 }
 
-.cellsite{
+.cell-link:hover {
+    text-decoration: underline; /* Adds underline when hovering over the link */
+}
+
+.cellsite {
     font-weight: bolder;
     text-decoration: underline;
 }
 
 .tablehold {
-    align-items: center;
+    display: flex;
+    justify-content: center; /* Centers the div horizontally */
+    padding: 20px;
 }
