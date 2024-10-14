@@ -36,7 +36,7 @@ async function loadLinks() {
             // Create and populate the placeholder URL cell
             const urlCell = document.createElement('td');
             const link = document.createElement('a');
-            link.href = '#'; // Placeholder link
+            link.href = '../assets/linkstash.txt'; // Placeholder link
             link.textContent = '--SiteURL--';
             link.classList.add('cell-link'); // Apply CSS class for URL
             urlCell.appendChild(link);
