@@ -28,6 +28,11 @@ async function loadLinks() {
         if (lines.length === 0) {
             const placeholderRow = document.createElement('tr');
             
+            // Create and populate the index cell
+            const indexCell = document.createElement('td');
+            indexCell.textContent = '1'; // Placeholder index
+            placeholderRow.appendChild(indexCell);
+
             // Create and populate the placeholder site name cell
             const nameCell = document.createElement('td');
             nameCell.textContent = '--SiteName--';
@@ -74,6 +79,7 @@ async function loadLinks() {
                 urlCell.appendChild(link);
 
                 // Add the cells to the row
+                row.appendChild(indexCell);
                 row.appendChild(nameCell);
                 row.appendChild(urlCell);
 
