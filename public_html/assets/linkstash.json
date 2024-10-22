@@ -1,0 +1,16 @@
+[
+    { 
+        "siteName": "Local Site Repository", 
+        "url": "https://github.com/Enzoss100/localsite" 
+    },
+    
+    { 
+        "siteName": "Homelab Documentation Repository", 
+        "url": "https://github.com/Enzoss100/homelabdocs" 
+    },
+    
+    { 
+        "siteName": "Debian Netowrk Documentation", 
+        "url": "https://wiki.debian.org/NetworkConfiguration"
+    }
+]
