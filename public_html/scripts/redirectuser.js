@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!link.hasAttribute('href') || link.getAttribute('href') === '') {
             link.addEventListener('click', function(event) {
                 event.preventDefault(); // Prevent the default link behavior
-                window.location.href = 'missingpage.html'; // Redirect to missingpage.html
+                window.location.href = '../pages/missingpage.html'; // Redirect to missingpage.html
             });
         }
     });
