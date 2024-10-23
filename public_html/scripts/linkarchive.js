@@ -31,7 +31,7 @@ async function loadLinks() {
 
             const urlCell = document.createElement('td');
             const link = document.createElement('a');
-            link.href = '../pages/missingpage.html'; // Placeholder link
+            link.href = '../assets/linkstash.json'; // Placeholder link
             link.textContent = '--SiteURL--';
             link.classList.add('cell-link'); // Apply CSS class for URL
             urlCell.appendChild(link);
