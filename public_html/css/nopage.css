@@ -1,7 +1,22 @@
-.pagebanner {
+body {
     background-color: black;
-    font-size: 34px;
-    color: white;
-    text-align: center;
+}
 
+/* Flexbox to center the .pagebanner div both vertically and horizontally */
+main {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Full viewport height for proper vertical centering */
+    text-align: center;       /* Centers the text inside the div */
+}
+
+.pagebanner {
+    background-color: black;  /* Keeps background black */
+    font-size: 54px;          /* Font size for the message */
+    color: white;             /* Text color */
+    text-align: center;       /* Centers the text */
+    font-weight: bolder;      /* Makes the text bolder */
+    padding: 20px;            /* Optional: Adds padding for better visibility */
+    border-radius: 8px;       /* Optional: Rounds the corners */
 }
