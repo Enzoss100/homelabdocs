@@ -1,9 +1,24 @@
+/* Resetting margins, paddings, and box-sizing */
 * {
-    margin: 0;                /* Resets margin for all elements */
-    padding: 0;               /* Resets padding for all elements */
-    box-sizing: border-box;   /* Includes padding and border in the element's total width and height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Apply flexbox layout to the body */
+html, body {
+    height: 100%;                /* Ensures the body and html take up full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Ensure main content takes up all available space */
+main {
+    flex: 1;                     /* Takes up available space between header and footer */
+}
+
+/* Basic body styles */
 body {
     font-family: Tahoma;
 }
@@ -13,6 +28,7 @@ body {
     color: inherit; /* Keeps the original color */
 }
 
+/* Styling for the top menu */
 .topmenu {
     background-color: black;
     color: white;
@@ -20,7 +36,8 @@ body {
     display: flex;
 }
 
-.menu-item{
+/* Menu item styles */
+.menu-item {
     font-family: tahoma;
     font-size: 18px;
     padding: 15px 40px 15px;               
@@ -32,35 +49,34 @@ body {
 .menu-item:hover {
     padding: 15px 40px 15px; 
     background-color: #007acc;
-    color:white;                
+    color: white;                
     text-align: center; 
     text-transform: uppercase;
     font-weight: bolder; 
 }
 
+/* Divider styles */
 .divider {
     height: 3px;
     border: none;
     background-color: black;
 }
 
-.footinfo{
+/* Footer styles */
+.footinfo {
     background-color: grey;
     color: black;
     text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-top: 8px;
-
-
+    width: 100%;               /* Ensures footer spans the full width */
 }
 
-.footlink{
-    color:black;
+.footlink {
+    color: black;
 }
 
-.footlink:hover{
+.footlink:hover {
     color: white;
-
-
 }
