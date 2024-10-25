@@ -19,16 +19,19 @@ async function loadLinks() {
 
         // Reference to the table body where the links will be added
         const tableBody = document.getElementById('linksTable').getElementsByTagName('tbody')[0];
+        
+        // Clear the table body before adding new rows
+        tableBody.innerHTML = '';
 
-        // If no entries are found in the JSON file, add a placeholder
+        // If no entries are found in the JSON file, add a placeholder row
         if (data.length === 0) {
             addPlaceholderRow(tableBody);
         } else {
-            // Loop through the JSON data and add it to the table
+            // Loop through the JSON data and add each entry to the table
             data.forEach(entry => {
                 // Check if siteName and url are empty or missing
                 const siteName = entry.siteName && entry.siteName.trim() !== '' ? entry.siteName : '--SiteName--';
-                const url = entry.url && entry.url.trim() !== '' ? entry.url : '--SiteURL--';
+                const url = entry.url && entry.url.trim() !== '' ? entry.url : '#'; // Use '#' for missing URLs
 
                 // Create a new table row
                 const row = document.createElement('tr');
@@ -41,8 +44,8 @@ async function loadLinks() {
                 // Create and populate the URL cell
                 const urlCell = document.createElement('td');
                 const link = document.createElement('a');
-                link.href = url !== '--SiteURL--' ? url : '#'; // Link to '#' if placeholder
-                link.textContent = url;
+                link.href = url;
+                link.textContent = url !== '#' ? url : '--SiteURL--';
                 link.classList.add('cell-link'); // Apply CSS class for URL
                 urlCell.appendChild(link);
 
@@ -70,7 +73,7 @@ function addPlaceholderRow(tableBody) {
 
     const urlCell = document.createElement('td');
     const link = document.createElement('a');
-    link.href = '../pages/missingpage.html'; // Placeholder link
+    link.href = '#'; // Placeholder link when no valid URL is present
     link.textContent = '--SiteURL--';
     link.classList.add('cell-link'); // Apply CSS class for URL
     urlCell.appendChild(link);
