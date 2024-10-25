@@ -3,8 +3,8 @@ async function loadLinks() {
     try {
         console.log('Fetching linkstash.json...');
         
-        // Fetch the content of linkstash.json from the assets directory
-        const response = await fetch('../assets/linkstash.json');
+        // Fetch the content of linkstash.json from the assets directory with cache-busting
+        const response = await fetch(`../assets/linkstash.json?timestamp=${new Date().getTime()}`);
         
         // Check if the fetch was successful
         if (!response.ok) {
@@ -19,6 +19,9 @@ async function loadLinks() {
 
         // Reference to the table body where the links will be added
         const tableBody = document.getElementById('linksTable').getElementsByTagName('tbody')[0];
+
+        // Clear existing table data
+        tableBody.innerHTML = '';
 
         // If no entries are found in the JSON file, add a placeholder
         if (data.length === 0) {
