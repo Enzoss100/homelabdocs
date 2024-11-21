@@ -1,8 +1,11 @@
-.devcontent{
+.devcontent {
     border-radius: 12px;
     background-color: #3ebfbf;
     padding-left: 36px;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-right: 40;
+    margin-right: 40px; /* Add 'px' unit for consistency */
+    max-width: 600px; /* Limits the width of the div */
+    width: 100%; /* Ensures responsiveness (optional) */
+    margin: 0 auto; /* Centers the div horizontally */
 }
