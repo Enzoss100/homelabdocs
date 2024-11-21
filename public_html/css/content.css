@@ -5,6 +5,6 @@
     padding-top: 12px;
     padding-bottom: 12px;
     margin-right: 40px; /* Add 'px' unit for consistency */
-    max-width: 860px; /* Limits the width of the div */
+    max-width: 960px; /* Limits the width of the div */
     width: 100%; /* Ensures responsiveness (optional) */
 }
