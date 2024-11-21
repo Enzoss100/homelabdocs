@@ -8,6 +8,11 @@
         "siteName": "Homelab Documentation Repository", 
         "url": "https://github.com/Enzoss100/homelabdocs" 
     },
+
+    {
+        "siteName":"Personal TMUX Configuration Repository",
+        "url":"https://github.com/Enzoss100/tmux-config"
+    },
     
     { 
         "siteName": "Debian Network Documentation", 
