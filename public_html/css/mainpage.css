@@ -11,7 +11,7 @@ html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    line-height: 3px;
+    line-height: 20px;
 }
 
 /* Ensure main content takes up all available space */
