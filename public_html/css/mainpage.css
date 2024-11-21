@@ -16,6 +16,7 @@ html, body {
 /* Ensure main content takes up all available space */
 main {
     flex: 1;                     /* Takes up available space between header and footer */
+    margin-left: 50px;
 }
 
 /* Basic body styles */
