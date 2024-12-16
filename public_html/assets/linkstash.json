@@ -13,6 +13,11 @@
         "siteName":"Personal TMUX Configuration Repository",
         "url":"https://github.com/Enzoss100/tmux-config"
     },
+
+    {
+        "siteName":"Personal Vim Configuration Repository",
+        "url":"https://github.com/Enzoss100/vim-config"
+    },
     
     { 
         "siteName": "Debian Network Documentation", 
