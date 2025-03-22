@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const headerHTML = `
+        <header class="topmenu">
             <div class="menu-item">
                 <a href="./index.html" class="headerlink">Home Page</a>
             </div>
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="menu-item">
                 <a href="./links.html" class="headerlink">Link Archive</a>
             </div>
+        </header>
     `;
 
     document.body.insertAdjacentHTML("afterbegin", headerHTML);
